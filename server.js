@@ -106,14 +106,14 @@ function runNightmare(first, last, cb) {
       .then(image => {
         const newImage = image.crop(58, 410, 220, 55);
         const section1 = newImage.clone().crop(0, 0, 55, 55);
-        const section2 = newImage.clone().crop(40, 0, 40, 55);
-        // const section3 = newImage.clone().crop(0, 0, 55, 55);
-        // const section4 = newImage.clone().crop(0, 0, 55, 55);
-        // const section5 = newImage.clone().crop(0, 0, 55, 55);
+        const section2 = newImage.clone().crop(50, 0, 40, 55);
+        const section3 = newImage.clone().crop(90, 0, 40, 55);
+        // const section4 = newImage.clone().crop(0, 0, 40, 55);
+        // const section5 = newImage.clone().crop(0, 0, 40, 55);
         newImage.write(`image${imgID}.jpg`);
-        section1.write(`image${imgID}section1.jpg`);
-        section2.write(`image${imgID}section2.jpg`);
-        // section3.write(`image${imgID}section3.jpg`);
+        // section1.write(`image${imgID}section1.jpg`);
+        // section2.write(`image${imgID}section2.jpg`);
+        section3.write(`image${imgID}section3.jpg`);
         // section4.write(`image${imgID}section4.jpg`);
         // section5.write(`image${imgID}section5.jpg`);
       })
