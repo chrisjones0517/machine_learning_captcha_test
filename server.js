@@ -108,6 +108,10 @@ function runNightmare(first, last, cb) {
         const section1 = newImage.clone().crop(0, 0, 55, 55);
         const section2 = newImage.clone().crop(50, 0, 40, 55);
         const section3 = newImage.clone().crop(90, 0, 40, 55);
+        section3.getBase64(Jimp.AUTO, (err, result) => {
+          if (err) console.log(err);
+          console.log(result);
+        });
         // const section4 = newImage.clone().crop(0, 0, 40, 55);
         // const section5 = newImage.clone().crop(0, 0, 40, 55);
         newImage.write(`image${imgID}.jpg`);
