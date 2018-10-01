@@ -1,0 +1,22 @@
+{
+  "name": "captchas_defeated",
+  "version": "1.0.0",
+  "description": "This is a web scraping tool for commercial background checks.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chris Jones",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "deathbycaptcha": "0.0.3",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "jimp": "^0.5.3",
+    "mysql2": "^1.6.1",
+    "nightmare": "^3.0.1",
+    "sequelize": "^4.38.1"
+  }
+}

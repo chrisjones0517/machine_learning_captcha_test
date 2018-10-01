@@ -1,0 +1,18 @@
+header {
+    text-align: center;
+}
+
+#title-logo {
+    display: inline;
+}
+
+h1 {
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+form {
+    margin: auto;
+    width: 20rem;
+}
+
